@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Spatial Query With Values
+qgisMinimumVersion=3.0
+description=Get maximum or minimum vector features for each polygon in an intersecting layer.
+version=0.1
+author=Ben Wirf
+email=ben.wirf@gmail.com
+
+about=Adds algorithms to the processing toolbox for querying vector layers based on spatial and attribute properties. Features are selected or extracted from an input layer for each feature in an intersecting polygon layer. Feature selection is based on the maximum or minimum values in a numeric attribute field.
+
+tracker=https://github.com/benwirf/qgis-SQV/issues
+repository=https://github.com/benwirf/qgis-SQV
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python, processing, vector analysis
+
+homepage=https://github.com/benwirf/qgis-SQV
+category=Analysis
+icon=sqv.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
