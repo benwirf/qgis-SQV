@@ -1,5 +1,6 @@
-# qgis-SQV
+# qgis-SQV (Spatial Query with Values)
 A processing plugin for QGIS 3
+
 This plugin adds two algorithms to the processing tool box.
 
 ![SQV screenshot image](Screenshot/Processing_SQV.png)
