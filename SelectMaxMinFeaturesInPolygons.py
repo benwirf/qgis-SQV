@@ -115,7 +115,7 @@ class SelectFeaturesInPolygonsWithValues(QgsProcessingAlgorithm):
             #Note that the three lines below are all in the polygon feature loop so they are executed once for each polygon feature
             d = dict(zip(ids, vals)) #creates dictionaries with id as key and elevation as value
             if d:
-                n_max = m_val(d.values())  #m_val is either max or min depending on which radio button is checked
+                n_max = m_val(d.values())  #m_val is either max or min depending on combo box selection
                 max_ids.append([a for a, b in d.items() if b == n_max])  #gets ids from each dictionary as keys with highest value
         all_max_min_ids = [item for sublist in max_ids for item in sublist]  # creates the flat list from list of lists
 
