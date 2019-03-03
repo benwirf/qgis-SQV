@@ -2,8 +2,7 @@
 A processing plugin for QGIS 3
 This plugin adds two algorithms to the processing tool box.
 
-![SQV screenshot image]
-(Screenshot/Processing_SQV.png)
+![SQV screenshot image](Screenshot/Processing_SQV.png)
 
 These algorithms allow the user to perform a spatial query between a polygon layer and and
 an additional intersecting vector layer of any geometry type. Additionally, the features extracted
