@@ -10,7 +10,7 @@
 name=Spatial Query With Values
 qgisMinimumVersion=3.0
 description=Get maximum or minimum vector features for each polygon in an intersecting layer.
-version=0.1
+version=1.0.2
 author=Ben Wirf
 email=ben.wirf@gmail.com
 
@@ -23,7 +23,8 @@ repository=https://github.com/benwirf/qgis-SQV
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-# changelog=
+# changelog= 1.0.1 Initial release
+1.0.2 Fix bug which causes runtime error when editing processing options with plugin installed
 
 # Tags are comma separated with spaces allowed
 tags=python, processing, vector analysis
@@ -36,4 +37,3 @@ experimental=True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-

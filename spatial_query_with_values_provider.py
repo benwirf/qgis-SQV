@@ -44,8 +44,9 @@ class SpatialQueryWithValuesProvider(QgsProcessingProvider):
     def __init__(self):
         QgsProcessingProvider.__init__(self)
 
-        # Load algorithms
-        self.alglist = [ExtractFeaturesInPolygonsWithValues(), SelectFeaturesInPolygonsWithValues()]
+    def load(self):
+        self.refreshAlgorithms()
+        return True
 
     def unload(self):
         """
@@ -54,10 +55,16 @@ class SpatialQueryWithValuesProvider(QgsProcessingProvider):
         """
         pass
 
+    def isActive(self):
+        return True
+
     def loadAlgorithms(self):
         """
         Loads all algorithms belonging to this provider.
         """
+        # Load algorithms
+        self.alglist = [ExtractFeaturesInPolygonsWithValues(), SelectFeaturesInPolygonsWithValues()]
+
         for alg in self.alglist:
             self.addAlgorithm(alg)
 
